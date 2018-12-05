@@ -1,6 +1,6 @@
-# awscli-cheatsheet
+# AWS Command Line Interface Cheatsheet
 
-### First time aws
+### Aws configure
 
 ```sh
 # aws configure
@@ -8,6 +8,36 @@ AWS Access Key ID [****************OMLQ]: ********
 AWS Secret Access Key [****************BQWW]: ***********
 Default region name [us-east-1]: eu-west-1
 Default output format [json]: json
+```
+
+### Update a Specific Property
+```sh
+$ aws configure
+AWS Access Key ID [****************1234]: 
+AWS Secret Access Key [****************1234]: 
+Default region name [eu-west-1]: 
+Default output format [json]: table
+```
+
+### AWS Configure a Named Profile
+```sh
+aws configure --profile administrator
+AWS Access Key ID [None]: 12334567890
+AWS Secret Access Key [None]: ABCDEFGHIJKLMNOPQRSTUVWXYZ
+Default region name [None]: eu-west-1
+Default output format [None]: json
+```
+
+### List Config Data
+
+```sh
+$ aws configure list
+      Name                    Value             Type    Location
+      ----                    -----             ----    --------
+   profile                <not set>             None    None
+access_key     ****************1234 shared-credentials-file    
+secret_key     ****************1234 shared-credentials-file    
+    region                eu-west-1      config-file    ~/.aws/config
 ```
 
 ### AWS Configuration Files
