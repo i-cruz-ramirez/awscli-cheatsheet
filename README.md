@@ -63,3 +63,39 @@ output=json
 region=us-east-1
 output=text
 ```
+
+# (EBS) Elastic Beanstalk
+## Creating Application
+```sh
+eb init
+```
+
+## Creating environment
+```sh
+eb create
+```
+
+## Opening Elastic Beanstalk Dashboard
+```sh
+eb console
+```
+
+## Show current environment
+```sh
+eb list
+```
+
+## Switch environment
+```sh
+eb use
+```
+
+## Logs Checking
+```sh
+eb logs
+```
+
+## Deployment
+```sh
+eb deploy
+```
