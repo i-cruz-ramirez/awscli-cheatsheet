@@ -74,9 +74,9 @@ eb init
 ```sh
 eb create
 ```
-> Take note:
-> When we create environment via the eb cli, the environment created are by default auto-scale, load-balanced environment.
-> The default instance type is t2.micro.
+Take note:
+- When we create environment via the eb cli, the environment created are by default auto-scale, load-balanced environment.
+- The default instance type is t2.micro.
 
 ## Opening Elastic Beanstalk Dashboard
 ```sh
