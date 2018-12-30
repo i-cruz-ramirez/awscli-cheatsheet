@@ -26,6 +26,12 @@ AWS Access Key ID [None]: 12334567890
 AWS Secret Access Key [None]: ABCDEFGHIJKLMNOPQRSTUVWXYZ
 Default region name [None]: eu-west-1
 Default output format [None]: json
+
+// Create a staging credential profile
+aws configure --profile staging
+
+// Create a production credential profile
+aws configure --profile production
 ```
 
 ### List Config Data
@@ -91,6 +97,14 @@ eb list
 ## Switch environment
 ```sh
 eb use
+
+// Switching and deploying to staging
+eb use helloeb-staging
+eb deploy
+
+// Switching and deploying to production
+eb use helloeb-production
+eb deploy
 ```
 
 ## Logs Checking
