@@ -1,1 +1,22 @@
 
+# Cloudwatch Command Line Cheatsheet
+
+##   Use the commands below for the lab.
+
+### Track Memory utilization
+
+```bash
+/path/agent/mon-put-instance-data.pl --mem-util --verify --verbose
+```
+
+### Track Memory Utilization, Memory Used And Memory Available
+
+```bash
+/path/agent/mon-put-instance-data.pl --mem-util --mem-used --mem-avail
+```
+
+### Add To /etc/crontab And Exec Each Minute
+
+```bash
+*/1 * * * * root /path/agent/mon-put-instance-data.pl --mem-util --mem-used --mem-avail
+```
